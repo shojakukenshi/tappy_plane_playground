@@ -66,7 +66,7 @@ class GameScene: SKScene {
         plane.position = CGPoint(x: plane.position.x, y: plane.position.y + yVelocity)
         if plane.position.x < self.frame.midX - self.frame.size.width / 3.2 || plane.position.y < self.frame.midY - self.frame.size.height / 2.0 {
             inGame = false
-            gameOverLabel = SKLabelNode(text: "GAME OVER")
+            gameOverLabel = SKLabelNode(text: "SCORE \(distance)")
             gameOverLabel.fontSize = 70
             addChild(gameOverLabel)
         }
