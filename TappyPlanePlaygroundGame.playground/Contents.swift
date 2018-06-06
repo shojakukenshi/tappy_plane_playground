@@ -89,6 +89,7 @@ if let scene = GameScene(fileNamed: "GameScene") {
     // Set the scale mode to scale to fit the window
     scene.scaleMode = .aspectFill
     
+    scene.backgroundColor = UIColor(red: 0, green: 0.6863, blue: 0.8588, alpha: 1.0)
     scene.physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
     
     // Present the scene
